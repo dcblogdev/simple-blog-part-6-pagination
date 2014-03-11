@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /simple-blog-part-5-sidebar-categories-and-archives/
+
+RewriteRule ^c-(.*)$ catpost.php?id=$1 [L]
+RewriteRule ^a-(.*)-(.*)$ archives.php?month=$1&year=$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+RewriteRule ^(.*)$ viewpost.php?id=$1 [QSA,L]

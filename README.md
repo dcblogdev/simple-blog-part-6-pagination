@@ -1,4 +1,4 @@
-simple-blog-part-6-pagination
-=============================
+Creating a blog from scratch with PHP - Part 6 Pagination
+=============
 
-Create a blog from scratch with PHP
+These files acompany the tutorial: [Creating a blog from scratch with PHP - Part 6 Pagination](daveismyname.com/creating-a-blog-from-scratch-with-php-part-6-pagination-bp)
