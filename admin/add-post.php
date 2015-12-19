@@ -38,6 +38,8 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 	//if form has been submitted process it
 	if(isset($_POST['submit'])){
 
+		$_POST = array_map( 'stripslashes', $_POST );
+
 		//collect form data
 		extract($_POST);
 
