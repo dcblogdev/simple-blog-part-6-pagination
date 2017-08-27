@@ -1,4 +1,5 @@
 <h1>Blog</h1>
+<p>Logged in as <?=$_SESSION['username'];?>
 <ul id='adminmenu'>
 	<li><a href='index.php'>Blog</a></li>
 	<li><a href='categories.php'>Categories</a></li>
