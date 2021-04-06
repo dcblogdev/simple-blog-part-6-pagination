@@ -27,8 +27,8 @@ if (!defined('PASSWORD_DEFAULT')) {
                 trigger_error("password_hash(): Password must be a string", E_USER_WARNING);
                 return null;
             }
-            if (!is_int($algo)) {
-                trigger_error("password_hash() expects parameter 2 to be long, " . gettype($algo) . " given", E_USER_WARNING);
+            if (is_int($algo)) {
+                trigger_error("password_hash() expects parameter 2 to be string, " . gettype($algo) . " given", E_USER_WARNING);
                 return null;
             }
             switch ($algo) {
